@@ -2,8 +2,8 @@
 
 const chromeLauncher = require('chrome-launcher')
 const got = require('got')
-const puppeteer = require('puppeteer')
 const lighthouse = require('lighthouse')
+const puppeteer = require('puppeteer')
 
 class Auditor {
   constructor(args) {
