@@ -21,3 +21,4 @@
 * Rewrite in Typescript.
 * Add best-practice performance categories to audit.
 * Investigate fixing sandboxing of Chrome in Docker environment.
+* Use console.table() for logging.
