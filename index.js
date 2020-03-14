@@ -19,7 +19,7 @@ class Auditor {
       logLevel: 'error'
     }
 
-    const chrome = this.chrome = await chromeLauncher.launch(chromeOpts)
+    const chrome = (this.chrome = await chromeLauncher.launch(chromeOpts))
 
     const resp = await got(`http://localhost:${chrome.port}/json/version`)
     const { webSocketDebuggerUrl } = JSON.parse(resp.body)
@@ -45,7 +45,7 @@ class Auditor {
       {
         extends: 'lighthouse:default',
         settings: {
-          onlyCategories: ['accessibility'],
+          onlyCategories: ['accessibility']
         }
       }
     )
