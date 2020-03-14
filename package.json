@@ -9,19 +9,10 @@
     "eslint": "^6.3.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-import": "^2.18.2",
-    "lint-staged": "^9.2.5",
     "prettier": "^1.17.1"
   },
-  "lint-staged": {
-    "linters": {
-      "*.js": [
-        "prettier --check",
-        "node_modules/.bin/eslint"
-      ]
-    }
-  },
   "scripts": {
-    "lint": "lint-staged"
+    "lint": "eslint"
   },
   "name": "lighthouse-audit",
   "version": "1.0.0",
